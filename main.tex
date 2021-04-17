@@ -169,9 +169,9 @@ in the eq (34) is for $E < 0$ and the \textbf{minus} sign for $E > 0$, whereas i
 
 \subsection{\textbf{Trajectory Shape and Equations}}
 From (34), it is clear that: 
-\subsubsection{\normalfont{\textbf{$E<0 \Rightarrow e<1$}}} This describes an \textbf{ellipse} with semi-major axis $\zeta$ and semi-minor axis $\eta$. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} + \frac{y^{2}}{\eta^{2}}=1$
-\subsubsection{\normalfont{\textbf{$E>0 \Rightarrow e>1$}}} This describes an \textbf{hyperbola} curve with the center $-e\zeta$ and the asymptotic lines being $y = \pm\frac{\abs{\eta} x}{\abs{\zeta}}$. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} - \frac{y^{2}}{\eta^{2}}=1$
-\subsubsection{\normalfont{\textbf{$E=0 \Rightarrow e=1$}}} This describes a \textbf{parabola} with the equation $y^{2} = \alpha^{2} - 2\alpha x$
+\subsubsection{\normalfont{\textbf{$E<0 \Rightarrow e<1$}}} This describes an \textbf{ellipse} with semi-major axis $\zeta$ and semi-minor axis $\eta$. The center of ellipse is $(-e\zeta,0) \Rightarrow (\mp \frac{e\abs{\alpha}}{1-e^{2}},0)$ with origin (source of central potential) at distance $\frac{e\abs{\alpha}}{1-e^{2}}$ from center of ellipse. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} + \frac{y^{2}}{\eta^{2}}=1$.
+\subsubsection{\normalfont{\textbf{$E>0 \Rightarrow e>1$}}} This describes an \textbf{hyperbola} curve with the center $(-e\zeta,0) \Rightarrow (\pm \frac{e\abs{\alpha}}{e^{2}-1},0)$ and the asymptotic lines being $y = \pm\frac{\abs{\eta} x}{\abs{\zeta}} = \pm\sqrt{\abs{1 - e^{2}}} x$. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} - \frac{y^{2}}{\eta^{2}}=1$.
+\subsubsection{\normalfont{\textbf{$E=0 \Rightarrow e=1$}}} This describes a \textbf{parabola} with the equation $y^{2} = \alpha^{2} - 2\alpha x$.
 \subsubsection{\normalfont{\textbf{$E=E_{\mathrm{min}} \Rightarrow e=0$}}} This is special case in which particle radial velocity $\dot{r} = 0$ and thus the radial motion will be \textbf{uniform circular motion} with radius of circular orbit equals $r_{*} = -\frac{J^2}{km}$. This motion is possible only in case of attractive inverse square force law.
 \subsection{\textbf{Behaviour of Particle under Repulsive and Attractive Inverse Square Force Laws}}
 \subsubsection{\normalfont{\textbf{Attractive Inverse Square Force Law}}}
@@ -199,7 +199,7 @@ Similarly \textit{Angular Period} ($ \Omega$), which is the angle swept out in t
 \end{dmath}
 \item If $E=0 \Rightarrow e =1, \beta \to \infty$, but (35) still has a single solution at $r=r_{\min }=\frac{J^{2}}{2mk}$. There is no maximum value for $r$, so the motion becomes unbounded.
 
-\item If $E>0 \Rightarrow e > 1, \beta < 0 $. Since the distance $r$ must be positive, only the minus sign in (35) gives a physically acceptable solution, $r_{\min }=\beta(1-e)= \frac{\left(e-1\right) k}{2 E}$. There is again no maximum value for $r$, and the motion is unbounded.
+\item If $E>0 \Rightarrow e > 1, \beta < 0 $. Since the distance $r$ must be positive, only the minus sign in (35) gives a physically acceptable solution, $r_{\min }=\beta(1-e)= \frac{\left(e-1\right) k}{2 E}$. There is again no maximum value for $r$, and the motion is unbounded. However, in this case particle trajectory is hyperbolic as $e>1$ and since $\alpha > 0 \Rightarrow r \to \infty \quad \text{when} \quad \cos{\psi} \to -\frac{1}{e}$. Since the right hand side is negative, this must occur for some angle $\psi > \frac{\pi}{2}$. This means the source of central potential is located at left side from center $(\frac{e\alpha}{e^{2}-1},0)$ of left branch of hyperbola $r = \frac{\alpha}{1 + e\cos{\psi}}$ with distance of $\frac{e\alpha}{e^{2}-1}$ between them. The right branch of hyperbola is $r =\frac{\alpha}{1 + e\cos{\left(\pi - \psi\right)}} $.
 
 \end{itemize}
 \subsubsection{\normalfont{\textbf{Repulsive Inverse Square Force Law}}}
@@ -207,7 +207,7 @@ In this case, we have $\beta = \frac{k}{2E}$ and $e$ remains same. Unlike previo
 $V_{\text {eff }} >0$ for repulsive inverse square force and from (13) $E - V_{\text {eff }} >=0$ which clearly violates if $E<0$. Thus, for $E<0$ there is no motion and if $E=0$ then particle remain at rest which we already discussed in section $4A$.  
 
 \begin{itemize}
-\item If $E>0 \Rightarrow e > 1, \beta > 0 $. Since the distance $r$ must be positive, only the plus sign in (35) gives a physically acceptable solution, $r_{\max }=\beta(1+e)= \frac{\left(e-1\right) k}{2 E}$. Opposite to previous case, in this there is no minimum value for $r$, and the motion is unbounded with hyperbolic curve with center being $\abs{e\zeta}$. 
+\item If $E>0 \Rightarrow e > 1, \beta > 0 $. Since the distance $r$ must be positive, only the plus sign in (35) gives a physically acceptable solution, $r_{\max }=\beta(1+e)= \frac{\left(1+e\right) k}{2 E}$. Opposite to previous case, in this there is no minimum value for $r$, and the motion is unbounded. The trajectory shape is hyperbolic curve with center being $(-\frac{e\abs{\alpha}}{e^{2}-1},0)$ and $r \to -\infty \quad \text{when} \quad \cos{\psi} \to -\frac{1}{e}$ because sign of $\alpha$ is negative as $k>0$ in this case. However, source of central potential is located at right side from center of downward branch of hyperbola $r = \frac{-\abs{\alpha}}{1 + e\cos{\psi}}$ with distance of $\frac{e\abs{\alpha}}{e^{2}-1}$ between them. The upward branch of hyperbola is $r =\frac{-\abs{\alpha}}{1 + e\cos{\left(\pi - \psi\right)}} $.
 \end{itemize}
 
 
