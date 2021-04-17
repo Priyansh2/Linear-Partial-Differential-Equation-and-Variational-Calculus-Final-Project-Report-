@@ -30,11 +30,11 @@
 \begin{document}
 
 \title{Motion of particle moving in a Central Potential \\
-{\footnotesize \textsuperscript{}}
+{\footnotesize \textsuperscript{\LARGE{\textbf{Project Report}}}}
 \thanks{}
 }
 
-\author{\IEEEauthorblockN{By: Priyansh Agrawal (201502168) and Anshul Goyal (201502055)}
+\author{\IEEEauthorblockN{By- Priyansh Agrawal (201502168) and Anshul Goyal (201502055)}
 \IEEEauthorblockN{} \\}
 
 \maketitle
@@ -69,7 +69,7 @@ Notice $L$ does not depend explicitly on $\phi$ and time ($t$), third EL equatio
 $\frac{d}{d t}\left(mr^{2}\sin^{2}\theta \dot{\phi}\right) = 0$. This means $mr^{2}\sin^{2}\theta \dot{\phi} = p_{\phi}$ is the conserved quantity. The term $p_{\phi}$ is also known as canonical momentum corresponding to $\phi$.
 
 \section{\textbf{Newton's 2nd Law}}
-$\vec{F} = m\vec{a}$. In spherical coordinate system let $\vec{a} = a_{r}\hat{r} + a_{\theta}\hat{\theta} + a_{\phi}\hat{\phi}$ where $\vec{a} = \dot{\vec{v}} = \ddot{\vec{r}}$. Lets find the path increment $d\vec{r}$ expressed in spherical coordinates. \\
+$\vec{F} = m\vec{a}$. In spherical coordinate system let $\vec{a} = a_{r}\hat{r} + a_{\theta}\hat{\theta} + a_{\phi}\hat{\phi}$ where $\vec{a} = \dot{\vec{v}} = \ddot{\vec{r}}$. Lets find the path increment $d\vec{r}$ expressed in spherical coordinates.
 \begin{equation}
 \begin{aligned}
 d \vec{r} &=d(r \hat{r})=\hat{r} d r+r d \hat{r} \\
@@ -156,7 +156,7 @@ Integrating (23) yields, \begin{dmath}
 \end{dmath} where $\psi_{o}^{'}$, $A = \frac{b}{\sqrt{b^{2} + 4ac^{2}}}$ and $B = \frac{2c^{2}}{\sqrt{b^{2} + 4ac^{2}}}$ are constants. Eq.(24) can be rewritten as: \begin{dmath}r = \frac{\alpha}{e\cos \left(\psi \pm \psi_{o}\right) + 1}\end{dmath} where $\psi_{o}$, $\alpha = -\frac{2c^{2}}{b}$ and $e = \sqrt{1 + \frac{4ac^{2}}{b^{2}}}$ are the constants. This is the equation of conic section in polar coordinates $(r, \psi)$ where $\alpha$ governs the size of the trajectory and $e$ is known as the eccentricity, governs the shape of the trajectory. Basically what we did is we convert spherical coordinates $(r,\theta,\phi)$ to polar coordinates $(r,\psi) \mid \dot{\psi} = \omega = \sqrt{\dot{\theta}^{2} + \sin^2{\theta}\dot{\phi}^{2}}$ and reduced our problem from 3D to 2D system. In this 2D system we are analyzing $r = f(t)$ and $\psi = f(r)$ which provides us the information of radial position of particle and its shape of trajectory which is different for different values of $E$ and $k$. 
 
 \subsection{\emph{\textbf{Relation of $\theta$ with $r$ and $\phi$ with $\theta$ i.e, $\theta = f(r)$ and $\phi = f(\theta)$}}}
-From expression (9), we have \begin{dmath}\dot{\theta}^{2} =  \frac{J^2}{m^{2}r^{4}} - sin^{2}{\theta}\left(\frac{p_{\phi}}{mr^{2}sin^{2}{\theta}}\right)^{2} = \frac{c^{2}}{r^{4}}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)\end{dmath} From (14) and (26), we have \begin{dmath}\pm \frac{c dr}{r\sqrt{ar^{2} - br - c^{2}}} = \frac{\sin{\theta} d\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}\end{dmath} where $d = \frac{p_{\phi}}{J} \left( < 1\right)$ is the constant. Integration eq. (27) yields, \begin{dmath} \theta = \cos^{-1}{\left[r_{o} \pm \lambda\sin^{-1}{\left(A + \frac{B}{r}\right)}\right]}\end{dmath} where $\lambda = \sqrt{1 - d^{2}}$ and $r_{o} = C_{1}\lambda$ where $C_{1}$ is the integration constant. \\
+From expression (9), we have \begin{dmath}\dot{\theta}^{2} =  \frac{J^2}{m^{2}r^{4}} - sin^{2}{\theta}\left(\frac{p_{\phi}}{mr^{2}sin^{2}{\theta}}\right)^{2} = \frac{c^{2}}{r^{4}}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)\end{dmath} From (14) and (26), we have \begin{dmath}\pm \frac{c dr}{r\sqrt{ar^{2} - br - c^{2}}} = \frac{\sin{\theta} d\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}\end{dmath} where $d = \frac{p_{\phi}}{J} \left( < 1\right)$ is the constant. Integration eq. (27) yields, \begin{dmath} \theta = \cos^{-1}{\left[r_{o} \pm \lambda\sin^{-1}{\left(A + \frac{B}{r}\right)}\right]}\end{dmath} where $\lambda = \sqrt{1 - d^{2}}$ and $r_{o} = C_{1}\lambda$ where $C_{1}$ is the integration constant. 
 Recall $\left(d\psi\right)^{2} = \left(d\theta\right)^{2} + \sin^{2}{\theta}\left(d\phi\right)^{2}$. This implies \begin{dmath}\left(\frac{d\psi}{d \theta}\right)^{2} = 1 + \sin^{2}{\theta}\left(\frac{d\phi}{d \theta}\right)^{2}\end{dmath} 
 $\left(\frac{d\psi}{d \theta}\right)^{2} = \left[\frac{\left(\frac{d\psi}{d r}\right)}{\left(\frac{d\theta}{d r}\right)}\right]^{2} = \frac{c^{2}g(r)^{2}}{\left(\frac{d\theta}{d r}\right)^{2}}$, where $g(r) = \frac{1}{r\sqrt{ar^{2} - br - c^{2}}}$ (from (23)). Now from eq. (27) we have $\left(\frac{d\theta}{d r}\right)^{2} = c^{2}g(r)^{2}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)$. Substitute this relation to get $\left(\frac{d\psi}{d \theta}\right)^{2}$ and thus from eq. (29), we get \begin{dmath} \phi = \pm \frac{d  d\theta}{\sin{\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}}\end{dmath} Integrating (30) yields, \begin{equation}\theta = \cot^{-1}{\left[\frac{\sqrt{1 - d^{2}}}{d}\sin^{-1}{\left(\phi_{o} \pm \phi\right)}\right]}\end{equation} where $\phi_{o}$ is the constant.
 
