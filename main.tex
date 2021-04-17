@@ -39,7 +39,7 @@
 
 \maketitle
 
-\section{\textbf{Lagrangian ($L$)}}
+\section{\large{\textbf{Lagrangian ($L$)}}}
 Lagrangian of particle of mass $m$ moving in a central potential $V(r)$ is given as: 
 $ L = T - V  = \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right)-V(r) $, where $T$ and $V$ are the Kinetic Energy and Potential Energy respectively. $r$ is the distance between the particle and the center (location of central potential) and is given by: $r=\sqrt{x^{2}+y^{2}+z^{2}}$. Transforming Cartesian Coordinates $(x,y,z)$ using Spherical Coordinates $(r,\theta,\phi)$:
 \begin{equation}
@@ -67,8 +67,10 @@ and we have $L=\frac{1}{2} m\left(\dot{r^{2}}+r^{2} \dot{\theta^{2}}+r^{2} \sin 
 \end{equation}
 Notice $L$ does not depend explicitly on $\phi$ and time ($t$), third EL equation can be rewritten as:
 $\frac{d}{d t}\left(mr^{2}\sin^{2}\theta \dot{\phi}\right) = 0$. This means $mr^{2}\sin^{2}\theta \dot{\phi} = p_{\phi}$ is the conserved quantity. The term $p_{\phi}$ is also known as canonical momentum corresponding to $\phi$.
+\vspace{1em}
 
-\section{\textbf{Newton's 2nd Law}}
+
+\section{\large{\textbf{Newton's 2nd Law}}}
 $\vec{F} = m\vec{a}$. In spherical coordinate system let $\vec{a} = a_{r}\hat{r} + a_{\theta}\hat{\theta} + a_{\phi}\hat{\phi}$ where $\vec{a} = \dot{\vec{v}} = \ddot{\vec{r}}$. Lets find the path increment $d\vec{r}$ expressed in spherical coordinates.
 \begin{equation}
 \begin{aligned}
@@ -88,8 +90,10 @@ Thus, velocity \begin{equation}\vec{v} =\dot{r}\hat{r}+ r\dot{\theta}\hat{\theta
 \vec{a}=\left(\ddot{r}-r \dot{\theta}^{2}-r \dot{\phi}^{2} \sin ^{2} \theta\right)\hat{r}+\left(r \ddot{\theta}+2 \dot{r} \dot{\theta}-r \dot{\phi}^{2} \sin \theta \cos \theta\right)\hat{\theta} + \left(r \ddot{\phi} \sin \theta+2 r \dot{\theta} \dot{\phi} \cos \theta+2 \dot{r} \dot{\phi} \sin \theta\right)\hat{\phi}
 \end{dmath}
 From (3) we find that $a_{r} = - \frac{\partial V(r)}{\partial r}$ and $a_{\theta} = a_{\phi} = 0$ which implies that particle is moving under central force $F(r) = -m\frac{\partial V(r)}{\partial r}$ in radial direction and is moving with constant velocity in other two directions. 
+\vspace{1em}
 
-\section{\textbf{Angular Momentum and Energy}}
+
+\section{\large{\textbf{Angular Momentum and Energy}}}
 Angular Momentum ($\vec{J}$) is given as: $\vec{J} = \vec{r} \times \vec{p}$, where $\vec{r} = r(\sin{\theta}\cos{\phi}\hat{x} + \sin{\theta}\sin{\phi}\hat{y} + \cos{\theta}\hat{z})$ and $p = p_{x}\hat{x} + p_{y}\hat{y} + p_{Z}\hat{z} = m(\dot{x}\hat{x} + \dot{y}\hat{y} + \dot{z}\hat{z})$. Using (2) and (5) we get \begin{equation}
     \vec{J} = mr^{2}(\dot{\theta}\hat{\phi} - \sin{\theta}\dot{\phi}\hat{\theta}) = p_{\theta}\hat{\phi} - \frac{p_{\phi}}{\sin{\theta}}\hat{\theta}
 \end{equation}
@@ -98,36 +102,55 @@ In (8) $p_{\theta} = \frac{\partial L}{\partial \dot{\theta}}$ , $p_{r} =  \frac
 \end{equation}
 Using Poisson Brackets one can prove that $J^{2}$ is conserved quantity just like total energy of the system ($E$). Notice that particle is moving under central force and angular momentum is always conserved in a motion under central force. Also, see that there are no time dependent constraints or velocity dependent forces and $L$ does not depend on time we have energy of system ($E$) equivalent to Hamiltonian ($H$) of the system. Moreover,$\frac{d H}{d t}+\frac{\partial L}{\partial t}=0$ which implies  conservation of the Hamiltonian is the same as energy conservation in this particular (most common) case. 
 \begin{dmath} E = T + V = \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right) + V(r)  = \frac{1}{2} m\left(\dot{r^{2}}+r^{2} \dot{\theta^{2}}+r^{2} \sin ^{2} \theta{\dot \phi^{2}}\right) + V(r) = \frac{p_{r}^{2}}{2 m}+\frac{p_{\theta}^{2}}{2 m r^{2}}+\frac{p_{\phi}^{2}}{2 m r^{2} \sin ^{2} \theta}+V(r) \end{dmath}
+\vspace{1em}
 
-\section{\textbf{Redefining motion in radial direction and energy in terms of Effective Potential}}
+
+
+\section{\large{\textbf{Redefining motion in radial direction and energy in terms of Effective Potential}}}
  Using first EL equation from (3) we have $m\ddot{r} = \frac{dV}{d r} + mr\left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right]$. Substitute expression (9) we get, \begin{equation}m \ddot{r}= -\frac{d V}{d r}+\frac{J^{2}}{mr^{3}} = F(r) =  -\frac{d V_{\mathrm{eff}}(r)}{d r}\end{equation} where $V_{\mathrm{eff}}(r)$ is called the effective potential and is given by \begin{equation}V_{\mathrm{eff}}(r)=V(r)+\frac{J^{2}}{2 m r^{2}}\end{equation}Using this expression we can express $E$ in terms of $V_{\mathrm{eff}}$, \begin{equation}
      E=\frac{1}{2} m \dot{r}^{2}+V_{\text {eff }}(r) = \frac{p_{r}^{2}}{2m} + V_{\mathrm{eff}}(r)
  \end{equation}
  Notice how we have changed our scope of problem from 3D $(x,y,z)$ to 1D ($r$) by using magnitude of the angular momentum.  This was all possible because angular momentum is conserved. Equation 13 is equivalent to a particle moving in one dimension in the original potential plus an extra potential from the angular momentum term. This extra term is known as angular momentum barrier (aka centrifugal barrier). Basically this term is responsible for stopping particle getting too close to the center as the potential energy becomes infinity (extremely high) if $r \to 0$, which means the speed in the radial direction must decrease to avoid violation of energy conservation. Thus, by investigating the shape of the effective potential $V_{\mathrm{eff}}(r)$ we can find out what kinds of motion are possible in the radial direction. This analysis is done in subsection $B$.
+\vspace{1em}
 
 
- \subsection{\emph{\textbf{Equation of motion in radial direction i.e, $r(t)$ or $t(r)$ for central potential $V(r) = \frac{k}{r}$}}}
- From (13) we have, \begin{dmath}\dot{r}=\frac{d r}{d t}=\pm \sqrt{\frac{2}{m}\left(E-V_{\mathrm{eff}}(r)\right)}=\pm \sqrt{\frac{2}{m}\left(E-V(r)-\frac{J^{2}}{2 m r^{2}}\right)} = \pm\frac{\sqrt{ar^{2} - br - c^{2}}}{r}\end{dmath} where $a = \frac{2E}{m}$, $b = \frac{2k}{m}$ and $c = \frac{J}{m}$ are the constants. Note $c$ is also known as specific angular momentum (angular momentum per unit mass). Depending on the sign of $E$ and $k$ we have different solutions to above linear first order ordinary differential equation in $r$ and $t$. 
+
+\subsection{\normalsize{\emph{\textbf{Equation of motion in radial direction i.e, $r(t)$ or $t(r)$ for central potential $V(r) = \frac{k}{r}$}}}}
+From (13) we have, \begin{dmath}\dot{r}=\frac{d r}{d t}=\pm \sqrt{\frac{2}{m}\left(E-V_{\mathrm{eff}}(r)\right)}=\pm \sqrt{\frac{2}{m}\left(E-V(r)-\frac{J^{2}}{2 m r^{2}}\right)} = \pm\frac{\sqrt{ar^{2} - br - c^{2}}}{r}\end{dmath} where $a = \frac{2E}{m}$, $b = \frac{2k}{m}$ and $c = \frac{J}{m}$ are the constants. Note $c$ is also known as specific angular momentum (angular momentum per unit mass). Depending on the sign of $E$ and $k$ we have different solutions to above linear first order ordinary differential equation in $r$ and $t$. 
+ \vspace{1em}
  
- \subsubsection{\normalfont{\textbf{$E > 0$}}}
+ 
+ \subsubsection{\normalsize{\emph{\textbf{$E > 0$}}}}
  \begin{dmath}t_{o} \pm t = \frac{b}{2a^{\frac{3}{2}}} \tanh ^{-1}\left({\frac{2ar-b}{2\sqrt{a}\sqrt{ar^{2} - br - c^{2}}}}\right) + \frac{\sqrt{ar^{2} - br - c^{2}}}{a} \end{dmath}
-  
+   \vspace{1em}
   \subsubsection{\normalfont{\textbf{$E < 0$}}}
   \begin{dmath}t_{o} \pm t = \frac{b}{2\abs{a}^{\frac{3}{2}}} \sin^{-1}\left({\frac{2\abs{a}r - b}{\sqrt{b^{2} - 4\abs{a}c^{2}}}}\right) - \frac{\sqrt{\abs{\abs{a}r^{2} + br + c^{2}}}}{\abs{a}} \mid{b^{2} > 4\abs{a}c^{2} \quad \& \quad \abs{a}r^{2} + br + c^{2} < 0} \end{dmath} This tells us that solution is possible only if $b<0 \Rightarrow k<0 \Rightarrow \abs{a}r^{2} + c^{2} < \abs{b}r$.
-  
-  \subsubsection{\normalfont{\textbf{$E = 0$}}}
+   \vspace{1em}
+   
+   
+   
+  \subsubsection{\normalsize{\emph{\textbf{$E = 0$}}}}
   if $k>=0$, then from (12) and (13) we have $p_{r}=0$ and $J^{2}=0$ which from (9) implies that $p_{\theta} = p_{\phi} = 0$. This implies $(\dot{r},\dot{\theta},\dot{\phi}) = (0,0,0)$ which means particle is at rest forever. But if $k<0$, then we have $a=0$ and $b<0$. Thus equation becomes:  \begin{dmath}t_{o} \pm t = \left(\frac{2r}{3b^{2}} - \frac{4c^{2}}{3b^{2}}\right)\sqrt{\abs{br + c^{2}}} \mid{r > \frac{c^2}{b}} \end{dmath}
+  \vspace{1em}
   
-  \subsection{\emph{\textbf{Motion description in radial direction}}}
+  
+  
+  \subsection{\normalsize{\emph{\textbf{Motion description in radial direction}}}}
   From (13), it is obvious that $E - V_{\mathrm{eff}}(r) >=0$. This means motion is bounded ($E < 0$), when $V_{\mathrm{eff}}(r) < 0$. Also, note that minimum value of energy ($E_{\mathrm{min}}$) is possible when $\dot{r} = 0$ and in which case $E_{\mathrm{min}} = V_{\mathrm{eff}}(r)_{min}$ at $r = r^{*}$ (critical point of curve $V_{\mathrm{eff}}(r) = 0$. In our case, we have central potential $V(r) = \frac{k}{r}$ and to find critical point set first derivative of $V_{\mathrm{eff}}$ equals to zero. We get $r_{*} = - \frac{J^{2}}{km}$. The double derivative at this point is strictly positive which means we have $V_{\mathrm{eff}}(r)_{min} = E_{\mathrm{min}} = - \frac{k^{2}m}{2J^{2}} (<0)$ and at this point we have particle at rest. Notice that critical value is possible when $k<0$ and $J\not=0$. If $J=0$ and $k<0$ then, $V_{\mathrm{eff}}(r)_{min} \to -\infty$ when $r \to 0$. This also means that $V_{\mathrm{eff}}(r)_{min} < 0$ in case of attractive inverse square force law ($V(r) = \frac{k}{r} \mid{k < 0}$) and  $V_{\mathrm{eff}}(r)_{min} \to 0$ when $r \to \infty$ in case of repulsive inverse square law ($V(r) = \frac{k}{r} \mid{k >0}$). Fig1. depicts various cases which we just discussed in case of central potential $V(r) = \frac{k}{r}$.
+  
+  
+  
 \begin{figure}[htpb!]
 \centerline{\includegraphics[scale=0.9]{fig1.png}}
 \caption{The curve corresponds to $k>0$ shows repulsive inverse square force law behaviour and with $k<0$, it shows attractive inverse square force law behaviour with centrifugal barrier absent in case of $J=0$. Curve corresponds to $k=0$ takes centrifugal barrier effect into consideration as there is no central force which is responsible to change radial position of particle at any time and hence, particle will do only rotation in $\theta$ and $\phi$ direction.}
 \label{fig}
 \end{figure}
  
- \section{\textbf{Shape of trajectory $\psi(r)$ or $r(\psi)$}}
- Knowing about shape of trajectory of particle is crucial to get global picture about its motion. We aim to know about shape of trajectory of particle for positive and negative values of $k$. From eq. (6), we get to know that velocity of particle $\vec{v} = \vec v_{\mathrm{radial}} + \vec v_{\mathrm{angular}}$. $\vec v_{\mathrm{radial}}$ responsible for radial kinetic energy $K_{r} = \frac{1}{2}m\dot{r}^{2} = \frac{p_{r}^{2}}{2m}$ and $\vec v_{\mathrm{angular}}$ is responsbile for angular kinetic energy $K_{\theta,\phi} =\frac{1}{2}mr^{2}(\dot{\theta}^{2} + \sin^{2}{\theta}\dot{\phi}^{2}) = \frac{p_{\theta}^{2}}{2mr^{2}} + \frac{p_{\phi}^{2}}{2mr^{2}\sin^2{\theta}} $. Thus, from (10) it is verified that $E = K_{r} + K_{\theta,\phi}$. Recall that  minimum value of energy ($E_{\mathrm{min}}$) is possible when $\dot{r} = 0$ or $K_{r} = 0$. This means for $k<0$ and $J\not=0$, we have $K_{\theta,\phi}$ at $r=r_{*}$ equals $\frac{k^{2}m}{2J^{2}}$. This means when particle has minimum energy $E_{\mathrm{min}}$, its sits at the bottom of the well (global minima in curve in fig1. at $r=r_{*}$) and stays there for all the time and although it has fixed radial position but it is still moving in $(\theta,\phi)$ direction with energy equals to angular kinetic energy ($K_{\theta,\phi}$) at $r=r_{*}$. \\
+ 
+ 
+ \section{\large{\textbf{Shape of trajectory $\psi(r)$ or $r(\psi)$}}}
+ \vspace{-2em}
+ Knowing about shape of trajectory of particle is crucial to get global picture about its motion. We aim to know about shape of trajectory of particle for positive and negative values of $k$. From eq. (6), we get to know that velocity of particle $\vec{v} = \vec v_{\mathrm{radial}} + \vec v_{\mathrm{angular}}$. $\vec v_{\mathrm{radial}}$ responsible for radial kinetic energy $K_{r} = \frac{1}{2}m\dot{r}^{2} = \frac{p_{r}^{2}}{2m}$ and $\vec v_{\mathrm{angular}}$ is responsbile for angular kinetic energy $K_{\theta,\phi} =\frac{1}{2}mr^{2}(\dot{\theta}^{2} + \sin^{2}{\theta}\dot{\phi}^{2}) = \frac{p_{\theta}^{2}}{2mr^{2}} + \frac{p_{\phi}^{2}}{2mr^{2}\sin^2{\theta}} $. Thus, from (10) it is verified that $E = K_{r} + K_{\theta,\phi}$. Recall that  minimum value of energy ($E_{\mathrm{min}}$) is possible when $\dot{r} = 0$ or $K_{r} = 0$. This means for $k<0$ and $J\not=0$, we have $K_{\theta,\phi}$ at $r=r_{*}$ equals $\frac{k^{2}m}{2J^{2}}$. This means when particle has minimum energy $E_{\mathrm{min}}$, its sits at the bottom of the well (global minima in curve in fig1. at $r=r_{*}$) and stays there for all the time and although it has fixed radial position but it is still moving in $(\theta,\phi)$ direction with energy equals to angular kinetic energy ($K_{\theta,\phi}$) at $r=r_{*}$. \\\\
  Now, let $\omega = \frac{\abs{\vec v_{\mathrm{angular}}}}{r}$ be the magnitude of angular velocity ($\vec{\omega}$). To get $\omega$, we should find $\vec{\omega}$ first. Since our polar coordinates changes with time and this causes spherical unit vectors to rotate with angular velocity  $\vec{\omega}$. From eq. (5) clearly all unit vectors and independent of $r$ but depends only on $\theta$ and $\phi$. This means changing $r$ does not cause rotation of basis vector but changing 
  $\theta$ and $\phi$ does. \begin{dmath}\dot{\hat{e}}=\vec{\omega} \times \hat{e}\end{dmath} for any unit/basis vector $\hat{e}$. Time derivatives of the unit vectors expressed in spherical coordinates are: \begin{equation}
 \begin{array}{l}
@@ -154,27 +177,58 @@ From (22) and (14), \begin{equation}
 Integrating (23) yields, \begin{dmath}
     \psi_{o}^{'} \pm \psi = \sin^{-1}{\left(A + \frac{B}{r}\right)}
 \end{dmath} where $\psi_{o}^{'}$, $A = \frac{b}{\sqrt{b^{2} + 4ac^{2}}}$ and $B = \frac{2c^{2}}{\sqrt{b^{2} + 4ac^{2}}}$ are constants. Eq.(24) can be rewritten as: \begin{dmath}r = \frac{\alpha}{e\cos \left(\psi \pm \psi_{o}\right) + 1}\end{dmath} where $\psi_{o}$, $\alpha = -\frac{2c^{2}}{b}$ and $e = \sqrt{1 + \frac{4ac^{2}}{b^{2}}}$ are the constants. This is the equation of conic section in polar coordinates $(r, \psi)$ where $\alpha$ governs the size of the trajectory and $e$ is known as the eccentricity, governs the shape of the trajectory. Basically what we did is we convert spherical coordinates $(r,\theta,\phi)$ to polar coordinates $(r,\psi) \mid \dot{\psi} = \omega = \sqrt{\dot{\theta}^{2} + \sin^2{\theta}\dot{\phi}^{2}}$ and reduced our problem from 3D to 2D system. In this 2D system we are analyzing $r = f(t)$ and $\psi = f(r)$ which provides us the information of radial position of particle and its shape of trajectory which is different for different values of $E$ and $k$. 
+\vspace{1em}
 
-\subsection{\emph{\textbf{Relation of $\theta$ with $r$ and $\phi$ with $\theta$ i.e, $\theta = f(r)$ and $\phi = f(\theta)$}}}
+
+
+
+\subsection{\normalsize{\emph{\textbf{Relation of $\theta$ with $r$ and $\phi$ with $\theta$ i.e, $\theta = f(r)$ and $\phi = f(\theta)$}}}}
 From expression (9), we have \begin{dmath}\dot{\theta}^{2} =  \frac{J^2}{m^{2}r^{4}} - sin^{2}{\theta}\left(\frac{p_{\phi}}{mr^{2}sin^{2}{\theta}}\right)^{2} = \frac{c^{2}}{r^{4}}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)\end{dmath} From (14) and (26), we have \begin{dmath}\pm \frac{c dr}{r\sqrt{ar^{2} - br - c^{2}}} = \frac{\sin{\theta} d\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}\end{dmath} where $d = \frac{p_{\phi}}{J} \left( < 1\right)$ is the constant. Integration eq. (27) yields, \begin{dmath} \theta = \cos^{-1}{\left[r_{o} \pm \lambda\sin^{-1}{\left(A + \frac{B}{r}\right)}\right]}\end{dmath} where $\lambda = \sqrt{1 - d^{2}}$ and $r_{o} = C_{1}\lambda$ where $C_{1}$ is the integration constant. 
 Recall $\left(d\psi\right)^{2} = \left(d\theta\right)^{2} + \sin^{2}{\theta}\left(d\phi\right)^{2}$. This implies \begin{dmath}\left(\frac{d\psi}{d \theta}\right)^{2} = 1 + \sin^{2}{\theta}\left(\frac{d\phi}{d \theta}\right)^{2}\end{dmath} 
 $\left(\frac{d\psi}{d \theta}\right)^{2} = \left[\frac{\left(\frac{d\psi}{d r}\right)}{\left(\frac{d\theta}{d r}\right)}\right]^{2} = \frac{c^{2}g(r)^{2}}{\left(\frac{d\theta}{d r}\right)^{2}}$, where $g(r) = \frac{1}{r\sqrt{ar^{2} - br - c^{2}}}$ (from (23)). Now from eq. (27) we have $\left(\frac{d\theta}{d r}\right)^{2} = c^{2}g(r)^{2}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)$. Substitute this relation to get $\left(\frac{d\psi}{d \theta}\right)^{2}$ and thus from eq. (29), we get \begin{dmath} \phi = \pm \frac{d  d\theta}{\sin{\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}}\end{dmath} Integrating (30) yields, \begin{equation}\theta = \cot^{-1}{\left[\frac{\sqrt{1 - d^{2}}}{d}\sin^{-1}{\left(\phi_{o} \pm \phi\right)}\right]}\end{equation} where $\phi_{o}$ is the constant.
+\vspace{1em}
 
-\subsection{\emph{\textbf{Relation of $\phi$ with $r$ ($\phi = f(r)$)}}}
+
+
+\subsection{\normalsize{\emph{\textbf{Relation of $\phi$ with $r$ ($\phi = f(r)$)}}}}
 Finding explicit relation among $\phi$ and $r$ is complex as there is no closed form solution of equation $\frac{d\phi}{d r} = H(r)$. Lets find the expression of $H(r)$. Since $\dot{\phi} = \frac{p_{\phi}}{mr^{2}sin^{2}{\theta}}$ which implies $\frac{d \phi}{d r} = \frac{lg(r)}{\sin^{2}{\theta(r)}}$, where $l = \frac{p_{\phi}}{m}$ (specific angular momentum about $z$ direction). Using trigonometric and inverse-trigonometric identities in expanding (28) to get expression of $\sin^{2}{\theta}$ in terms of $r$: \begin{dmath}\sin^{2}{\theta(r)} = \frac{k_{1}^{'}r^{2} + k_{2}^{'}r + k_{3}^{'} + \sqrt{k_{4}^{'}r^{2} + k_{5}^{'}r + k_{6}^{'}}}{r^{2}}\end{dmath} This implies $H(r) = \frac{lg(r)r^{2}}{k_{1}^{'}r^{2} + k_{2}^{'}r + k_{3}^{'} + \sqrt{k_{4}^{'}r^{2} + k_{5}^{'}r + k_{6}^{'}}}$, where $k_{i}^{'} \forall{i}$. Simplifying $(H(r)$ further we get, \begin{dmath} \phi(r) = \pm\left[C_{2} - k_{1}\int^{r}\frac{F(r) dr}{P(r^{2}) + k_{2}Q(r^{2})}\right]\end{dmath} where $C_{2}$, $k_{1}$, $k_{2}$ are constants and $P(r^{2})$, $Q(r^{2})$ are two degree 2 polynomials of form $r^{2} + \gamma r + \delta$ for some constant $\gamma$ and $\delta$. There is no closed form solution of eq (33). 
+\vspace{1em}
 
-\section{\textbf{Trajectory Equations and Behaviour of Particle under Repulsive and Attractive Inverse Square Force Laws}}
+
+
+\section{\large{\textbf{Trajectory Equations and Behaviour of Particle under Repulsive and Attractive Inverse Square Force Laws}}}
 Recall the eq. of conic section in polar form, $r = \frac{\alpha}{1 + e\cos{\psi}}$. Transforming this equation into Cartesian coordinates $(x,y)$ we get following equation of conic section, \begin{dmath}\frac{(x+e \zeta)^{2}}{\zeta^{2}} \pm \frac{y^{2}}{\eta^{2}}=1 \end{dmath} $\quad \text {where} \quad e^{2}-1=\frac{2 E J^{2}}{m k^{2}}, \zeta^{2} = \frac{\alpha^{2}}{\left(1 - e^{2}\right)^{2}} , \eta^{2}=\frac{\alpha^{2}}{\abs{1 - e^{2}}} \quad\text{and}\quad \alpha = \pm\frac{J^{2}}{m\abs{k}}$. The  the \textbf{plus} sign
 in the eq (34) is for $E < 0$ and the \textbf{minus} sign for $E > 0$, whereas in $\alpha$ \textbf{plus} sign is for $k<0$ and the \textbf{minus} sign for $k>0$. 
+\vspace{1em}
 
-\subsection{\textbf{Trajectory Shape and Equations}}
-From (34), it is clear that: 
-\subsubsection{\normalfont{\textbf{$E<0 \Rightarrow e<1$}}} This describes an \textbf{ellipse} with semi-major axis $\zeta$ and semi-minor axis $\eta$. The center of ellipse is $(-e\zeta,0) \Rightarrow (\mp \frac{e\abs{\alpha}}{1-e^{2}},0)$ with origin (source of central potential) at distance $\frac{e\abs{\alpha}}{1-e^{2}}$ from center of ellipse. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} + \frac{y^{2}}{\eta^{2}}=1$.
-\subsubsection{\normalfont{\textbf{$E>0 \Rightarrow e>1$}}} This describes an \textbf{hyperbola} curve with the center $(-e\zeta,0) \Rightarrow (\pm \frac{e\abs{\alpha}}{e^{2}-1},0)$ and the asymptotic lines being $y = \pm\frac{\abs{\eta} x}{\abs{\zeta}} = \pm\sqrt{\abs{1 - e^{2}}} x$. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} - \frac{y^{2}}{\eta^{2}}=1$.
-\subsubsection{\normalfont{\textbf{$E=0 \Rightarrow e=1$}}} This describes a \textbf{parabola} with the equation $y^{2} = \alpha^{2} - 2\alpha x$.
+
+
+\subsection{\normalsize{\emph{\textbf{Trajectory Shape and Equations}}}}
+From (34), it is clear that:
+\subsubsection{\normalsize{\emph{\textbf{$E<0 \Rightarrow e<1$}}}} This describes an \textbf{ellipse} with semi-major axis $\zeta$ and semi-minor axis $\eta$. The center of ellipse is $(-e\zeta,0) \Rightarrow (\mp \frac{e\abs{\alpha}}{1-e^{2}},0)$ with origin (source of central potential) at distance $\frac{e\abs{\alpha}}{1-e^{2}}$ from center of ellipse. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} + \frac{y^{2}}{\eta^{2}}=1$.
+\vspace{1em}
+
+
+
+\subsubsection{\normalsize{\emph{\textbf{$E>0 \Rightarrow e>1$}}}} This describes an \textbf{hyperbola} curve with the center $(-e\zeta,0) \Rightarrow (\pm \frac{e\abs{\alpha}}{e^{2}-1},0)$ and the asymptotic lines being $y = \pm\frac{\abs{\eta} x}{\abs{\zeta}} = \pm\sqrt{\abs{1 - e^{2}}} x$. The equation will be $\frac{(x+e \zeta)^{2}}{\zeta^{2}} - \frac{y^{2}}{\eta^{2}}=1$.
+\vspace{1em}
+
+
+
+\subsubsection{\normalsize{\emph{\textbf{$E=0 \Rightarrow e=1$}}}} This describes a \textbf{parabola} with the equation $y^{2} = \alpha^{2} - 2\alpha x$.
+\vspace{1em}
+
+
+
 \subsubsection{\normalfont{\textbf{$E=E_{\mathrm{min}} \Rightarrow e=0$}}} This is special case in which particle radial velocity $\dot{r} = 0$ and thus the radial motion will be \textbf{uniform circular motion} with radius of circular orbit equals $r_{*} = -\frac{J^2}{km}$. This motion is possible only in case of attractive inverse square force law.
-\subsection{\textbf{Behaviour of Particle under Repulsive and Attractive Inverse Square Force Laws}}
-\subsubsection{\normalfont{\textbf{Attractive Inverse Square Force Law}}}
+\vspace{1em}
+
+
+
+
+\subsection{\normalsize{\emph{\textbf{Behaviour of Particle under Repulsive and Attractive Inverse Square Force Laws}}}}
+
+\subsubsection{\normalsize{\emph{\textbf{Attractive Inverse Square Force Law}}}}
 Looking at expression of $V_{\text {eff }}(r)$ in eq. (13), we find that bounded motion is possible if $E_{\min } \leq E<0$, where $E_{\min }$ is the minimum value of $V_{\text {eff }}$. For $E \geq 0$ the radial motion is unbounded, although for any $J \neq 0$ there is a minimum distance $r_{\min }$. If $E=E_{\min }$ we have a stable circular orbit. Let us now find the minimum and maximum distances for a particular energy and
 angular momentum. They are given by \begin{dmath}
 \begin{array}{c}
@@ -183,12 +237,21 @@ V_{\mathrm{eff}}(r)=\frac{J^{2}}{2 m r^{2}}-\frac{k}{r}=E \Rightarrow \quad E r^
 =-\frac{k}{2 E}\left(1 \pm \sqrt{1+\frac{2 E J^{2}}{m k^{2}}}\right) =\beta(1 \pm e)
 \end{array}
 \end{dmath} where $\beta=-\frac{k}{2 E}, \quad e=\sqrt{1+\frac{2 E J^{2}}{m k^{2}}}$. Also, $E_{\min }=-\frac{mk^{2}}{2 J^{2}}(<0)$ at $r = r_{*} = \frac{J^{2}}{km}(>0)$. 
+\vspace{1em}
+
+
 
 \begin{itemize}
 \item If $E<E_{\min }$, the expression inside the square root becomes negative ($e$ doesn't exist), and there is therefore no solution.
-    
+\vspace{1em}
+
+
+
 \item If $E=E_{\min } \Rightarrow e =0$, and we have $r_{\min }=r_{\max }=\beta=\frac{J^{2}}{mk}$. This corresponds to a stable circular orbit with $r=r_{0}=\frac{J^{2}}{mk}$.
-    
+\vspace{1em}
+
+
+
 \item If $E_{\min }<E<0 \Rightarrow e < 1$ there are two solutions, $r_{\min }=\beta(1-e), r_{\max }=\beta(1+e)$, and the
 radial motion is bounded between these two distances. Notice that the shape of trajectory is ellipse in this case as $e<1$. When the orbiting particle is nearest (distance = $r_{\min}$ ) to the center then that point is called \textit{periapsis} and when it is farthest (distance = $r_{\max}$) from center then it is called \textit{apoapsis}. Moreover, the time it takes to complete one full oscillation in the radial direction, from periapsis to apoapsis and back again (also known as \textit{Time Period} $T$) is given by: \begin{dmath}
  T = 2\Delta t = T= 2\int^{r_{\max}}_{r_{\min}}\left[ \sqrt{\frac{m}{2}} \frac{d r}{\sqrt{E-V_{\text {eff }}(r)}}\right] =  2\int^{r_{\max}}_{r_{\min}}\left[ \frac{\abs{b}}{2\abs{a}^{\frac{3}{2}}} \sin^{-1}\left({\frac{2\abs{a}r + \abs{b}}{\sqrt{b^{2} - 4\abs{a}c^{2}}}}\right) + \frac{\sqrt{\abs{\abs{a}r^{2} - \abs{b}r + c^{2}}}}{\abs{a}}\right] \mid{\abs{a}r^{2} + c^{2} < \abs{b}r} \quad \text{(from $(16)$)}
@@ -197,16 +260,32 @@ Similarly \textit{Angular Period} ($ \Omega$), which is the angle swept out in t
 \begin{dmath}
 \Omega = 2\Delta \psi = 2  \int^{r_{\max}}_{r_{\min}} \left(\frac{J}{\sqrt{2m}}\frac{d r}{r^{2} \sqrt{E-V_{\text {eff }}(r)}}\right) =  2\int^{r_{\max}}_{r_{\min}}\sin^{-1}{\left(\frac{1}{e} - \frac{2c^{2}}{\abs{b}er}\right)} \quad \text{(from $(24)$)}
 \end{dmath}
+\vspace{1em}
+
+
+
 \item If $E=0 \Rightarrow e =1, \beta \to \infty$, but (35) still has a single solution at $r=r_{\min }=\frac{J^{2}}{2mk}$. There is no maximum value for $r$, so the motion becomes unbounded.
+\vspace{1em}
+
+
 
 \item If $E>0 \Rightarrow e > 1, \beta < 0 $. Since the distance $r$ must be positive, only the minus sign in (35) gives a physically acceptable solution, $r_{\min }=\beta(1-e)= \frac{\left(e-1\right) k}{2 E}$. There is again no maximum value for $r$, and the motion is unbounded. However, in this case particle trajectory is hyperbolic as $e>1$ and since $\alpha > 0 \Rightarrow r \to \infty \quad \text{when} \quad \cos{\psi} \to -\frac{1}{e}$. Since the right hand side is negative, this must occur for some angle $\psi > \frac{\pi}{2}$. This means the source of central potential is located at left side from center $(\frac{e\alpha}{e^{2}-1},0)$ of left branch of hyperbola $r = \frac{\alpha}{1 + e\cos{\psi}}$ with distance of $\frac{e\alpha}{e^{2}-1}$ between them. The right branch of hyperbola is $r =\frac{\alpha}{1 + e\cos{\left(\pi - \psi\right)}} $.
 
+
+
 \end{itemize}
-\subsubsection{\normalfont{\textbf{Repulsive Inverse Square Force Law}}}
+\vspace{1em}
+
+
+
+\subsubsection{\normalsize{\emph{\textbf{Repulsive Inverse Square Force Law}}}}
 In this case, we have $\beta = \frac{k}{2E}$ and $e$ remains same. Unlike previous case, only unbounded motion exist in this because 
 $V_{\text {eff }} >0$ for repulsive inverse square force and from (13) $E - V_{\text {eff }} >=0$ which clearly violates if $E<0$. Thus, for $E<0$ there is no motion and if $E=0$ then particle remain at rest which we already discussed in section $4A$.  
+\vspace{1em}
+
 
 \begin{itemize}
+
 \item If $E>0 \Rightarrow e > 1, \beta > 0 $. Since the distance $r$ must be positive, only the plus sign in (35) gives a physically acceptable solution, $r_{\max }=\beta(1+e)= \frac{\left(1+e\right) k}{2 E}$. Opposite to previous case, in this there is no minimum value for $r$, and the motion is unbounded. The trajectory shape is hyperbolic curve with center being $(-\frac{e\abs{\alpha}}{e^{2}-1},0)$ and $r \to -\infty \quad \text{when} \quad \cos{\psi} \to -\frac{1}{e}$ because sign of $\alpha$ is negative as $k>0$ in this case. However, source of central potential is located at right side from center of downward branch of hyperbola $r = \frac{-\abs{\alpha}}{1 + e\cos{\psi}}$ with distance of $\frac{e\abs{\alpha}}{e^{2}-1}$ between them. The upward branch of hyperbola is $r =\frac{-\abs{\alpha}}{1 + e\cos{\left(\pi - \psi\right)}} $.
 \end{itemize}
 
