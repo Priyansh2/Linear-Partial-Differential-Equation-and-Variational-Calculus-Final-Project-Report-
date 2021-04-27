@@ -34,7 +34,7 @@
 \thanks{}
 }
 
-\author{\IEEEauthorblockN{By- Priyansh Agrawal (201502168) and Anshul Goyal (201502055)}
+\author{\IEEEauthorblockN{By- Priyansh Agrawal (201502168) and Anshul Goyal (201502052)}
 \IEEEauthorblockN{} \\}
 
 \maketitle
@@ -65,7 +65,7 @@ and we have $L=\frac{1}{2} m\left(\dot{r^{2}}+r^{2} \dot{\theta^{2}}+r^{2} \sin 
 \frac{d}{d t} \frac{\partial L}{\partial \dot{\phi}}-\frac{\partial L}{\partial \phi}=m r^{2} \sin ^{2} \theta \ddot{\phi}+ 2 m r \sin ^{2} \theta \dot{r} \dot{\phi}+ \\ 2 m r^{2} \sin \theta \cos \theta \dot{\theta} \dot{\phi}=0
 \end{array}
 \end{equation}
-Notice $L$ does not depend explicitly on $\phi$ and time ($t$), third EL equation can be rewritten as:
+Notice $L$ does not depend explicitly on $\phi$ and time ($t$) and so, third EL equation can be rewritten as:
 $\frac{d}{d t}\left(mr^{2}\sin^{2}\theta \dot{\phi}\right) = 0$. This means $mr^{2}\sin^{2}\theta \dot{\phi} = p_{\phi}$ is the conserved quantity. The term $p_{\phi}$ is also known as canonical momentum corresponding to $\phi$.
 \vspace{1em}
 
@@ -89,7 +89,7 @@ where \begin{equation}
 Thus, velocity \begin{equation}\vec{v} =\dot{r}\hat{r}+ r\dot{\theta}\hat{\theta}+ r\sin \theta\dot{\phi}\hat{\phi} = v_{r}\hat{r} + v_{\theta}\hat{\theta} + v_{\phi}\hat{\phi}\end{equation} and acceleration \begin{dmath}
 \vec{a}=\left(\ddot{r}-r \dot{\theta}^{2}-r \dot{\phi}^{2} \sin ^{2} \theta\right)\hat{r}+\left(r \ddot{\theta}+2 \dot{r} \dot{\theta}-r \dot{\phi}^{2} \sin \theta \cos \theta\right)\hat{\theta} + \left(r \ddot{\phi} \sin \theta+2 r \dot{\theta} \dot{\phi} \cos \theta+2 \dot{r} \dot{\phi} \sin \theta\right)\hat{\phi}
 \end{dmath}
-From (3) we find that $a_{r} = - \frac{\partial V(r)}{\partial r}$ and $a_{\theta} = a_{\phi} = 0$ which implies that particle is moving under central force $F(r) = -m\frac{\partial V(r)}{\partial r}$ in radial direction and is moving with constant velocity in other two directions. 
+From (3), we find that $a_{r} = - \frac{1}{m}\left(\frac{\partial V(r)}{\partial r}\right)$ and $a_{\theta} = a_{\phi} = 0$, which implies that particle is moving under central force $F(r) = ma_{r} = -\frac{\partial V(r)}{\partial r}$ in radial direction and is moving with constant velocity in other two directions. 
 \vspace{1em}
 
 
@@ -97,26 +97,27 @@ From (3) we find that $a_{r} = - \frac{\partial V(r)}{\partial r}$ and $a_{\thet
 Angular Momentum ($\vec{J}$) is given as: $\vec{J} = \vec{r} \times \vec{p}$, where $\vec{r} = r(\sin{\theta}\cos{\phi}\hat{x} + \sin{\theta}\sin{\phi}\hat{y} + \cos{\theta}\hat{z})$ and $p = p_{x}\hat{x} + p_{y}\hat{y} + p_{Z}\hat{z} = m(\dot{x}\hat{x} + \dot{y}\hat{y} + \dot{z}\hat{z})$. Using (2) and (5) we get \begin{equation}
     \vec{J} = mr^{2}(\dot{\theta}\hat{\phi} - \sin{\theta}\dot{\phi}\hat{\theta}) = p_{\theta}\hat{\phi} - \frac{p_{\phi}}{\sin{\theta}}\hat{\theta}
 \end{equation}
-In (8) $p_{\theta} = \frac{\partial L}{\partial \dot{\theta}}$ , $p_{r} =  \frac{\partial L}{\partial \dot{r}}$ be the canonical momenta corresponding to coordinate $\theta$ and $r$ respectively similar to $p_{\phi} =  \frac{\partial L}{\partial \dot{\phi}}$. The square of the magnitude of angular momentum \begin{equation}
+In (8), $p_{\theta} = \frac{\partial L}{\partial \dot{\theta}}$ , $p_{r} =  \frac{\partial L}{\partial \dot{r}}$ are the canonical momenta corresponding to coordinates $\theta$ and $r$ respectively similar to $p_{\phi} =  \frac{\partial L}{\partial \dot{\phi}}$. The square of the magnitude of angular momentum \begin{equation}
     J^{2} = m^{2} r^{4}\left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right] = p_{\theta}^{2}+\frac{p_{\phi}^{2}}{\sin ^{2} \theta}
 \end{equation}
-Using Poisson Brackets one can prove that $J^{2}$ is conserved quantity just like total energy of the system ($E$). Notice that particle is moving under central force and angular momentum is always conserved in a motion under central force. Also, see that there are no time dependent constraints or velocity dependent forces and $L$ does not depend on time we have energy of system ($E$) equivalent to Hamiltonian ($H$) of the system. Moreover,$\frac{d H}{d t}+\frac{\partial L}{\partial t}=0$ which implies  conservation of the Hamiltonian is the same as energy conservation in this particular (most common) case. 
+Since particle is moving under central force and angular momentum is always conserved in a motion under central force. Also, see that there are no time dependent constraints or velocity dependent forces and $L$ does not depend on time we have energy of system ($E$) equivalent to Hamiltonian ($H$) of the system. Moreover, $\frac{d H}{d t}+\frac{\partial L}{\partial t}=0$ which implies  conservation of the Hamiltonian is the same as energy conservation in this particular (most common) case. 
 \begin{dmath} E = T + V = \frac{1}{2} m\left(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}\right) + V(r)  = \frac{1}{2} m\left(\dot{r^{2}}+r^{2} \dot{\theta^{2}}+r^{2} \sin ^{2} \theta{\dot \phi^{2}}\right) + V(r) = \frac{p_{r}^{2}}{2 m}+\frac{p_{\theta}^{2}}{2 m r^{2}}+\frac{p_{\phi}^{2}}{2 m r^{2} \sin ^{2} \theta}+V(r) \end{dmath}
 \vspace{1em}
 
 
 
-\section{\large{\textbf{Redefining motion in radial direction and energy in terms of Effective Potential}}}
- Using first EL equation from (3) we have $m\ddot{r} = \frac{dV}{d r} + mr\left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right]$. Substitute expression (9) we get, \begin{equation}m \ddot{r}= -\frac{d V}{d r}+\frac{J^{2}}{mr^{3}}  =  -\frac{d V_{\mathrm{eff}}(r)}{d r} \Rightarrow \ddot{r} = -\frac{1}{m}\left(\frac{d V_{\mathrm{eff}}(r)}{dr}\right)\end{equation} where $V_{\mathrm{eff}}(r)$ is called the effective potential and is given by \begin{equation}V_{\mathrm{eff}}(r)=V(r)+\frac{J^{2}}{2 m r^{2}}\end{equation}Using this expression we can express $E$ in terms of $V_{\mathrm{eff}}$, \begin{equation}
+
+\section{\large{\textbf{Motion in Radial Direction}}}
+ Using first EL equation from (3) we have $m\ddot{r} = \frac{dV}{d r} + mr\left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right]$. Substitute expression (9) we get, \begin{equation}m \ddot{r}= -\frac{d V}{d r}+\frac{J^{2}}{mr^{3}}  =  -\frac{d V_{\mathrm{eff}}(r)}{d r} \Rightarrow \ddot{r} = -\frac{1}{m}\left(\frac{d V_{\mathrm{eff}}(r)}{dr}\right)\end{equation} where $V_{\mathrm{eff}}(r)$ is called the effective potential and is given by \begin{equation}V_{\mathrm{eff}}(r)=V(r)+\frac{J^{2}}{2 m r^{2}}\end{equation}Using this expression we can express $E$ in terms of $V_{\mathrm{eff}}$ as: \begin{equation}
      E=\frac{1}{2} m \dot{r}^{2}+V_{\text {eff }}(r) = \frac{p_{r}^{2}}{2m} + V_{\mathrm{eff}}(r)
  \end{equation}
- (11) is the 2nd order autonomous differential equation. Notice how we have changed our scope of problem from 3D $(x,y,z)$ to 1D ($r$) by using magnitude of the angular momentum.  This was all possible because angular momentum is conserved. Equation 13 is equivalent to a particle moving in one dimension in the original potential plus an extra potential from the angular momentum term. This extra term is known as angular momentum barrier (aka centrifugal barrier). Basically this term is responsible for stopping particle getting too close to the center as the potential energy becomes infinity (extremely high) if $r \to 0$, which means the speed in the radial direction must decrease to avoid violation of energy conservation. Thus, by investigating the shape of the effective potential $V_{\mathrm{eff}}(r)$ we can find out what kinds of motion are possible in the radial direction. This analysis is done in subsection $B$.
+ Eq. (11) is the 2nd order autonomous differential equation. Notice how we have changed our scope of problem from 3D $(x,y,z)$ to 1D ($r$) by using magnitude of the angular momentum.  This was all possible because angular momentum is conserved. Eq.(13) is equivalent to a particle moving in one dimension in the original potential plus an extra potential from the angular momentum term. This extra term is known as angular momentum barrier (aka centrifugal barrier). Basically this term is responsible for stopping particle getting too close to the center as the potential energy becomes infinity (extremely high) if $r \to 0$, which means the speed in the radial direction must decrease to avoid violation of energy conservation. Thus, by investigating the shape of the effective potential $V_{\mathrm{eff}}(r)$ we can find out what kinds of motion are possible in the radial direction. This analysis is done in section \RomanNumeralCaps{4} B.
 \vspace{1em}
 
 
 
 \subsection{\normalsize{\emph{\textbf{Equation of motion in radial direction i.e, $r(t)$ or $t(r)$ for central potential $V(r) = \frac{k}{r}$}}}}
-From (13) we have, \begin{dmath}\dot{r}=\frac{d r}{d t}= \sqrt{\frac{2}{m}\left(E-V_{\mathrm{eff}}(r)\right)}= \sqrt{\frac{2}{m}\left(E-V(r)-\frac{J^{2}}{2 m r^{2}}\right)} = \frac{\sqrt{ar^{2} - br - c^{2}}}{r}\end{dmath} where $a = \frac{2E}{m}$, $b = \frac{2k}{m}$ and $c = \frac{J}{m}$ are the constants. Note $c$ is also known as specific angular momentum (angular momentum per unit mass). Depending on the sign of $E$ and $k$ we have different solutions to above linear first order ordinary differential equation in $r$ and $t$. 
+From (13) we have, \begin{dmath}\dot{r}=\frac{d r}{d t}= \sqrt{\frac{2}{m}\left(E-V_{\mathrm{eff}}(r)\right)}= \sqrt{\frac{2}{m}\left(E-V(r)-\frac{J^{2}}{2 m r^{2}}\right)} = \frac{\sqrt{ar^{2} - br - c^{2}}}{r}\end{dmath} where $a = \frac{2E}{m}$, $b = \frac{2k}{m}$ and $c = \frac{J}{m}$ are the constants. Note $c$ is also known as specific angular momentum (angular momentum per unit mass). Depending on the sign of $E$ and $k$ we have different solutions to above differential equation in $r$ and $t$. 
  \vspace{1em}
  
  
@@ -149,19 +150,22 @@ From (13) we have, \begin{dmath}\dot{r}=\frac{d r}{d t}= \sqrt{\frac{2}{m}\left(
 \label{fig}
 \end{figure}
 
+ \subsection{\normalsize{\emph{\textbf{Angular Kinetic Energy $K_{\theta,\phi}$}}}}
+ Velocity of particle is given by: $\vec{v} = \vec v_{\mathrm{radial}} + \vec v_{\mathrm{angular}}$, where $\vec v_{\mathrm{radial}}$ component is responsible for particle's radial kinetic energy $K_{r} = \frac{1}{2}m\dot{r}^{2} = \frac{p_{r}^{2}}{2m}$ and $\vec v_{\mathrm{angular}}$ for its angular kinetic energy $K_{\theta,\phi} =\frac{1}{2}mr^{2}(\dot{\theta}^{2} + \sin^{2}{\theta}\dot{\phi}^{2}) = \frac{p_{\theta}^{2}}{2mr^{2}} + \frac{p_{\phi}^{2}}{2mr^{2}\sin^2{\theta}} $. Thus, from (10) we can verify that $E = K_{r} + K_{\theta,\phi}$. Recall that  minimum value of energy ($E_{\mathrm{min}}$) is possible when $\dot{r} = 0$ or $K_{r} = 0$. This means for $k<0$ and $J\not=0$, we have $K_{\theta,\phi}$ at $r=r_{*}$ equals $\frac{k^{2}m}{2J^{2}}$. This means when particle has minimum energy $E_{\mathrm{min}}$, its sits at the bottom of the potential well (global minima in curve in fig1. at $r=r_{*}$) and stays there for all the time and although it has fixed radial position but it is still moving in $(\theta,\phi)$ direction with energy equals to angular kinetic energy ($K_{\theta,\phi}$) at $r=r_{*}$.
+ \vspace{1em}
+ 
+ 
  
  \section{\large{\textbf{Shape of trajectory $\psi(r)$ or $r(\psi)$}}}
- \vspace{-1.5em}
- Knowing about shape of trajectory of particle is crucial to get global picture about its motion and hence we want to know about shape of trajectory of particle for positive and negative values of $k$. From eq. (6), we get $\vec{v} = \vec v_{\mathrm{radial}} + \vec v_{\mathrm{angular}}$, where $\vec v_{\mathrm{radial}}$ component is responsible for particle's radial kinetic energy $K_{r} = \frac{1}{2}m\dot{r}^{2} = \frac{p_{r}^{2}}{2m}$ and $\vec v_{\mathrm{angular}}$ for its angular kinetic energy $K_{\theta,\phi} =\frac{1}{2}mr^{2}(\dot{\theta}^{2} + \sin^{2}{\theta}\dot{\phi}^{2}) = \frac{p_{\theta}^{2}}{2mr^{2}} + \frac{p_{\phi}^{2}}{2mr^{2}\sin^2{\theta}} $. Thus, from (10) we can verify that $E = K_{r} + K_{\theta,\phi}$. Recall that  minimum value of energy ($E_{\mathrm{min}}$) is possible when $\dot{r} = 0$ or $K_{r} = 0$. This means for $k<0$ and $J\not=0$, we have $K_{\theta,\phi}$ at $r=r_{*}$ equals $\frac{k^{2}m}{2J^{2}}$. This means when particle has minimum energy $E_{\mathrm{min}}$, its sits at the bottom of the potential well (global minima in curve in fig1. at $r=r_{*}$) and stays there for all the time and although it has fixed radial position but it is still moving in $(\theta,\phi)$ direction with energy equals to angular kinetic energy ($K_{\theta,\phi}$) at $r=r_{*}$. \\\\
- Now, let $\omega = \frac{\abs{\vec v_{\mathrm{angular}}}}{r}$ be the magnitude of angular velocity ($\vec{\omega}$). To get $\omega$, we should find $\vec{\omega}$ first. Since our polar coordinates changes with time and this causes spherical unit vectors to rotate with angular velocity  $\vec{\omega}$. From eq. (5) clearly all unit vectors and independent of $r$ but depends only on $\theta$ and $\phi$. This means changing $r$ does not cause rotation of basis vector but changing 
- $\theta$ and $\phi$ does. \begin{dmath}\dot{\hat{e}}=\vec{\omega} \times \hat{e}\end{dmath} for any unit/basis vector $\hat{e}$. Time derivatives of the unit vectors expressed in spherical coordinates are: \begin{equation}
+ Knowing about shape of trajectory of particle is crucial to get global picture about its motion and hence we want to know about shape of trajectory of particle for positive and negative values of $k$. Let $\omega = \frac{\abs{\vec v_{\mathrm{angular}}}}{r}$ be the magnitude of angular velocity ($\vec{\omega}$). To get $\omega$, we should find $\vec{\omega}$ first. Since our polar coordinates changes with time and this causes spherical unit vectors to rotate with angular velocity  $\vec{\omega}$. From eq. (5) clearly all unit vectors are independent of $r$ but depends only on $\theta$ and $\phi$. This means changing $r$ does not cause rotation of basis/unit vector but changing 
+ $\theta$ and $\phi$ does and following relation holds for any unit/basis vector $\hat{e}$, \begin{dmath}\dot{\hat{e}}=\vec{\omega} \times \hat{e}\end{dmath}. Time derivatives of the unit vectors expressed in spherical coordinates are: \begin{equation}
 \begin{array}{l}
 \dot{\hat{r}}=\frac{\partial \hat{r}}{\partial r} \dot{r}+\frac{\partial \hat{r}}{\partial \theta} \dot{\theta}+\frac{\partial \hat{r}}{\partial \phi} \dot{\phi}=\hat{\theta} \dot{\theta}+\hat{\phi} \dot{\phi} \sin \theta \\
 \dot{\hat{\theta}}=\frac{\partial \hat{\theta}}{\partial r} \dot{r}+\frac{\partial \hat{\theta}}{\partial \theta} \dot{\theta}+\frac{\partial \hat{\theta}}{\partial \phi} \dot{\phi}=-\hat{r} \dot{\theta}+\hat{\phi} \dot{\phi} \cos \theta \\
 \dot{\hat{\phi}}=\frac{\partial \hat{\phi}}{\partial r} \dot{r}+\frac{\partial \hat{\phi}}{\partial \theta} \dot{\theta}+\frac{\partial \hat{\phi}}{\partial \phi} \dot{\phi}=-(\hat{r} \sin \theta+\hat{\theta} \cos \theta) \dot{\phi}
 \end{array}
 \end{equation}
- Let $\vec{\omega} = \omega_{r}\hat{r} + \omega_{\theta}\hat{\theta} + \omega_{\phi}\hat{\phi}$. Now using (18) and (19) for all three spherical unit vectors we get \begin{equation}
+ Let $\vec{\omega} = \omega_{r}\hat{r} + \omega_{\theta}\hat{\theta} + \omega_{\phi}\hat{\phi}$ and using (18) and (19) for all three spherical unit vectors $(\hat{r},\hat{\theta},\hat{\phi})$, we get \begin{equation}
 \vec{\omega} = \dot{\phi} \cos \theta \hat{r}-\dot{\phi} \sin \theta \hat{\theta} +\dot{\theta} \hat{\phi}
 \end{equation}
 From (20) we have $\omega^{2} = \left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right]$ and from (9) we have $J = mr^{2}w$. Let $\omega = \frac{d\psi}{dt} = \sqrt{\left[\dot{\theta}^{2}+\sin ^{2} \theta \dot{\varphi}^{2}\right]} = \frac{c}{r^{2}}$, where $c$ is the specific angular momentum. This means change in angular displacement ($\psi$) is monotonic in any central-force problem and it is either continuously increasing or decreasing with $r$ with magnitude depends upon sign of specific angular momentum ($c$). If c is not zero, the independent variable can be changed from $t$ to $\psi$: \begin{equation}
@@ -172,7 +176,7 @@ From (21) and (14), \begin{equation}
 \end{equation}
 Integrating (22) yields, \begin{dmath}
     \psi - \psi_{o}^{'} = \sin^{-1}{\left(A + \frac{B}{r}\right)}
-\end{dmath} where $\psi_{o}^{'}$, $A = \frac{b}{\sqrt{b^{2} + 4ac^{2}}}$ and $B = \frac{2c^{2}}{\sqrt{b^{2} + 4ac^{2}}}$ are constants. Eq.(23) can be rewritten as: \begin{dmath}r = \frac{\alpha}{e\cos \left(\psi - \psi_{o}\right) + 1}\end{dmath} where $\psi_{o}$, $\alpha = -\frac{2c^{2}}{b} = -\frac{J^{2}}{mk}$ and $e = \sqrt{1 + \frac{4ac^{2}}{b^{2}}} = \sqrt{1 + \frac{2EJ^{2}}{mk^{2}}}$ are the constants. This is the equation of conic section in polar coordinates $(r, \psi)$ where $\alpha$ governs the size of the trajectory and $e$ is known as the eccentricity, governs the shape of the trajectory. Basically what we did is we convert spherical coordinates $(r,\theta,\phi)$ to polar coordinates $(r,\psi) \mid \dot{\psi} = \omega = \sqrt{\dot{\theta}^{2} + \sin^2{\theta}\dot{\phi}^{2}}$ and reduced our problem from 3D to 2D system. In this 2D system we are analyzing $r = f(t)$ and $\psi = f(r)$ which provides us the information of radial position of particle and its shape of trajectory which is different for different values of $E$ and $k$. Eq. (24) can be re-written as: $r = \frac{\alpha}{e\cos{\psi}+1}$ if we shift our point of reference ($(r = 0,\psi = 0)$ in polar coordinate system  to $(r = 0,\psi = \psi_{0})$. We did this to simplify the equation of various conic sections which we have discussed section \RomanNumeralCaps{6}.
+\end{dmath} where $\psi_{o}^{'}$, $A = \frac{b}{\sqrt{b^{2} + 4ac^{2}}}$ and $B = \frac{2c^{2}}{\sqrt{b^{2} + 4ac^{2}}}$ are constants. Eq.(23) can be rewritten as: \begin{dmath}r = \frac{\alpha}{e\cos \left(\psi - \psi_{o}\right) + 1}\end{dmath} where $\psi_{o}$, $\alpha = -\frac{2c^{2}}{b} = -\frac{J^{2}}{mk}$ and $e = \sqrt{1 + \frac{4ac^{2}}{b^{2}}} = \sqrt{1 + \frac{2EJ^{2}}{mk^{2}}}$ are the constants. This is the equation of conic section in polar coordinates $(r, \psi)$ where $\alpha$ governs the size of the trajectory and $e$ is known as the eccentricity, governs the shape of the trajectory. Basically what we did is we convert spherical coordinates $(r,\theta,\phi)$ to polar coordinates $(r,\psi) \mid \dot{\psi} = \omega = \sqrt{\dot{\theta}^{2} + \sin^2{\theta}\dot{\phi}^{2}}$ and reduced our problem from 3D to 2D system. In this 2D system we are analyzing $r = f(t)$ and $\psi = f(r)$ which provides us the information of radial position of particle and its shape of trajectory which is different for different values of $E$ and $k$. Eq. (24) can be re-written as: $r = \frac{\alpha}{e\cos{\psi}+1}$ if we shift our point of reference ($(r = 0,\psi = 0)$ in polar coordinate system  to $(r = 0,\psi = \psi_{0})$. We did this to simplify the equation of various conic sections which we have discussed in section \RomanNumeralCaps{6}.
 \vspace{1em}
 
 
@@ -210,7 +214,7 @@ Integration eq. (27) yields,
  \end{split}
  \end{equation} where $\lambda = \sqrt{1 - d^{2}}$ , $r_{o}$, $M$, $N$ are constants. 
 Recall $\left(d\psi\right)^{2} = \left(d\theta\right)^{2} + \sin^{2}{\theta}\left(d\phi\right)^{2}$. This implies \begin{dmath}\left(\frac{d\psi}{d \theta}\right)^{2} = 1 + \sin^{2}{\theta}\left(\frac{d\phi}{d \theta}\right)^{2}\end{dmath} 
-$\left(\frac{d\psi}{d \theta}\right)^{2} = \left[\frac{\left(\frac{d\psi}{d r}\right)}{\left(\frac{d\theta}{d r}\right)}\right]^{2} = \frac{c^{2}g(r)^{2}}{\left(\frac{d\theta}{d r}\right)^{2}}$, where $g(r) = \frac{1}{r\sqrt{ar^{2} - br - c^{2}}}$ (from (22)). Now from eq. (28) we have $\left(\frac{d\theta}{d r}\right)^{2} = c^{2}g(r)^{2}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)$. Substitute this relation to get $\left(\frac{d\psi}{d \theta}\right)^{2}$ and thus from eq. (30), we get \begin{dmath} \phi =  \frac{d  d\theta}{\sin{\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}}\end{dmath} Integrating (31) yields, \begin{equation}\theta = \cot^{-1}{\left[\frac{\sqrt{1 - d^{2}}}{d}\sin^{-1}{\left(\phi - \phi_{o} \right)}\right]}\end{equation} where $\phi_{o}$ is the constant.
+$\left(\frac{d\psi}{d \theta}\right)^{2} = \left[\frac{\left(\frac{d\psi}{d r}\right)}{\left(\frac{d\theta}{d r}\right)}\right]^{2} = \frac{c^{2}\left[g(r)\right]^{2}}{\left(\frac{d\theta}{d r}\right)^{2}}$, where $g(r) = \frac{1}{r\sqrt{ar^{2} - br - c^{2}}}$ (from (22)). Now from eq. (28) we have $\left(\frac{d\theta}{d r}\right)^{2} = c^{2}g(r)^{2}\left(1 - \frac{d^{2}}{\sin^{2}{\theta}}\right)$. Substitute this relation to get $\left(\frac{d\psi}{d \theta}\right)^{2}$ and thus from eq. (30), we get \begin{dmath} \phi =  \frac{d  d\theta}{\sin{\theta}{\sqrt{\sin^{2}{\theta} - d^{2}}}}\end{dmath} Integrating (31) yields, \begin{equation}\theta = \cot^{-1}{\left[\frac{\sqrt{1 - d^{2}}}{d}\sin^{-1}{\left(\phi - \phi_{o} \right)}\right]}\end{equation} where $\phi_{o}$ is the constant.
 \vspace{1em}
 
 
@@ -252,7 +256,7 @@ From (35), it is clear that:
 \subsection{\normalsize{\emph{\textbf{Behaviour of Particle under Repulsive and Attractive Inverse Square Force Laws}}}}
 
 \subsubsection{\normalsize{\emph{\textbf{Attractive Inverse Square Force Law}}}}
-Looking at expression of $V_{\text {eff }}(r)$ in eq. (13), we find that bounded motion is possible if $E_{\min } \leq E<0$, where $E_{\min }$ is the minimum value of $V_{\text {eff }}$. For $E \geq 0$ the radial motion is unbounded, although for any $J \neq 0$ there is a minimum distance $r_{\min }$. If $E=E_{\min }$ we have a stable circular orbit. Let us now find the minimum and maximum distances for a particular energy and
+In this case, bounded motion is possible if $E_{\min } \leq E<0$, where $E_{\min }$ is the minimum value of $V_{\text {eff }}$. For $E \geq 0$ the radial motion is unbounded. If $E=E_{\min }$ we have a stable circular orbit. Let us now find the minimum $(r_{\min})$ and maximum distances $(r_{\max})$ for a particular energy and
 angular momentum. They are given by \begin{dmath}
 \begin{array}{c}
 V_{\mathrm{eff}}(r)=\frac{J^{2}}{2 m r^{2}}-\frac{k}{r}=E \Rightarrow \quad E r^{2}+k r-\frac{J^{2}}{2 m}=0 \\
@@ -303,7 +307,7 @@ Similarly \textit{Angular Period} ($ \Omega$), which is the angle swept out in t
 
 \subsubsection{\normalsize{\emph{\textbf{Repulsive Inverse Square Force Law}}}}
 In this case, we have $\beta = \frac{k}{2E}$ and $e$ remains same. Unlike previous case, only unbounded motion exist in this because 
-$V_{\text {eff }} >0$ for repulsive inverse square force and from (13) $E - V_{\text {eff }} >=0$ which clearly violates if $E<0$. Thus, for $E<0$ there is no motion and if $E=0$ then particle remain at rest which we already discussed in section $\RomanNumeralCaps{4}A$.  
+$V_{\text {eff }} >0$ for repulsive inverse square force and from (13) $E - V_{\text {eff }} >=0$ which clearly violates if $E<0$. Thus, for $E<0$ there is no motion and if $E=0$ then particle remain at rest which we already discussed in section \RomanNumeralCaps{4} A.  
 \vspace{1em}
 
 
@@ -316,7 +320,7 @@ $V_{\text {eff }} >0$ for repulsive inverse square force and from (13) $E - V_{\
 
 
 \section{\large{\textbf{{Relation of $r$ with $t$ in parametric form i.e, $t = f(\rho)$ and $r = g(\rho)$ with parameter $\rho$}}}}
-In this section, we will see parametric representation of eq. (14) for different values of $E$ and $k$. Parameterization provides great efficiency when differentiating and integrating curves. Parametric equations can be used to describe all types of curves that can be represented on a plane but are most often used in situations where curves on a Cartesian plane cannot be described by functions (e.g., when a curve crosses itself).
+In this section, we will see parametric representation of eq. (14) for different values of $E$ and $k$. Parameterization provides great efficiency when differentiating and integrating curves. Parametric equations can be used to describe all types of curves that can be represented on a plane but are most often used in situations where curves on a Cartesian plane cannot be described by functions.
 \begin{itemize}
 \item \textbf{$k<0$ and $E<0$ :}
 \begin{equation}
